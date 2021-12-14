@@ -15,18 +15,21 @@ class CreateSheetsPage extends StatelessWidget {
         body: Container(
           alignment: Alignment.center,
           padding: EdgeInsets.all(32),
-          child: ButtonWidget(
-            text: 'Save',
-            onClicked: () async {
-              final user = {
-                UserFields.data: 1,
-                UserFields.produto: 'óleo',
-                UserFields.preco: '12,95',
-                UserFields.pagamento: 'Crédito',
-              };
-              await UserSheetsApi.insert([user]);
+          child: UserFormWidget(
+            onSavedUser: (user) async {
+              final user = User(
+                datacompra: '14/12/21',
+                produto: 'óleo',
+                preco: '12,95',
+                pagamento: 'Crédito',
+              );
+              await UserSheetsApi.insert([user.toJson()]);
             },
           ),
         ),
       );
+
+  Future insertUsers() async {
+    await UserSheetsApi.insert();
+  }
 }

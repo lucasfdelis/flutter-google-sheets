@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
 import 'package:flutter_application/api/sheets/sales_sheet_api.dart';
 
 Future main() async {
@@ -15,8 +14,9 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) => MaterialApp(
-      debugShowCheckedModeBanner: false,
-      title: title,
-      theme: ThemeData(primarySwatch: Colors.blue),
-      home: Container());
+        debugShowCheckedModeBanner: false,
+        title: title,
+        theme: ThemeData(primarySwatch: Colors.blue),
+        home: Container(),
+      );
 }

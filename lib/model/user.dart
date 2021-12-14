@@ -1,6 +1,8 @@
 class UserFields {
-  static final String Data = 'Data';
-  static final String Nome = 'Nome';
-  static final String Produto = 'Produto';
-  static final String Pagamento = 'Pagamento';
+  static final String data = 'Data';
+  static final String produto = 'Produto';
+  static final String preco = 'Preco';
+  static final String pagamento = 'Pagamento';
+
+  static List<String> getFields() => [data, produto, preco, pagamento];
 }

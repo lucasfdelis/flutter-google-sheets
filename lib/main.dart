@@ -12,7 +12,7 @@ Future main() async {
 }
 
 class MyApp extends StatelessWidget {
-  static final String title = 'Google Sheets API';
+  static final String title = 'Registro de vendas';
 
   @override
   Widget build(BuildContext context) => MaterialApp(

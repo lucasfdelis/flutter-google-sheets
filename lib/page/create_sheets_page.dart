@@ -9,13 +9,13 @@ class CreateSheetsPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) => Scaffold(
         appBar: AppBar(
-          title: Text(MyApp.title),
+          title: Text('oi'),
           centerTitle: true,
         ),
         body: Container(
           alignment: Alignment.center,
           padding: EdgeInsets.all(32),
-          color: Colors.red,
+          color: Colors.white,
           child: UserFormWidget(
             onSavedUser: (user) async {
               await UserSheetsApi.insert([user.toJson()]);

@@ -21,7 +21,7 @@ class CreateSheetsPage extends StatelessWidget {
         body: Container(
           alignment: Alignment.center,
           padding: EdgeInsets.all(32),
-          color: store.clicado ? Colors.white : Colors.black12,
+          // color: store.clicado ? Colors.white : Colors.black12,
           child: UserFormWidget(
             onSavedUser: (user) async {
               await UserSheetsApi.insert([user.toJson()]);

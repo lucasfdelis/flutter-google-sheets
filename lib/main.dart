@@ -32,8 +32,7 @@ class MyApp extends StatelessWidget {
         builder: (_) => MaterialApp(
           debugShowCheckedModeBanner: false,
           title: 'oi',
-          theme: ThemeData(
-              primarySwatch: store.clicado ? Colors.yellow : Colors.blue),
+          theme: ThemeData.dark(),
           home: CreateSheetsPage(),
         ),
       ),
